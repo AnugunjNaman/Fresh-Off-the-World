@@ -26,7 +26,7 @@ export default class SearchTopic extends Component {
     this.state = {
       topic: this.props.navigation.getParam("topic"),
       isLoading: true,
-      data: null,
+      data: [],
       setModalVisible: false,
       modalArticleData: {},
     };

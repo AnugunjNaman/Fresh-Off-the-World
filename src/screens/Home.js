@@ -21,6 +21,7 @@ import SourceList from "../sources/sourceList";
 export default class MainScreen extends Component {
   state = {
     specificSources: SourceList,
+    topic: "",
     input: {
       topic: "",
     },
@@ -28,12 +29,14 @@ export default class MainScreen extends Component {
 
   handleInput = (inputTopic) => {
     this.setState({
-      input: { topic: inputTopic },
+      topic: inputTopic,
+      input: { topic: inputTopic.toLowerCase() },
       FabActive: false,
     });
   };
 
   render() {
+    console.log("topic", this.state.input.topic);
     return (
       <>
         <View
@@ -50,7 +53,7 @@ export default class MainScreen extends Component {
         >
           <TextInput
             style={{ width: "85%", height: "120%", backgroundColor: "#ffffff" }}
-            value={this.state.input.topic}
+            value={this.state.topic}
             placeholder=" Search Topics"
             onChangeText={this.handleInput}
           />
@@ -102,16 +105,6 @@ export default class MainScreen extends Component {
             </TouchableOpacity>
           </View>
 
-          {/* Render BookMarks */}
-          <Fab
-            direction="left"
-            style={{ backgroundColor: "black" }}
-            position="bottomRight"
-            onPress={() => this.props.navigation.navigate("Bookmarks")}
-          >
-            <Ionicons name="bookmarks" size={100} />
-          </Fab>
-
           {/* Render Button for list wise specific news */}
           <FlatList
             numColumns={2}
@@ -136,6 +129,16 @@ export default class MainScreen extends Component {
               </TouchableOpacity>
             )}
           />
+
+          {/* Render BookMarks */}
+          <Fab
+            direction="left"
+            style={{ backgroundColor: "black" }}
+            position="bottomRight"
+            onPress={() => this.props.navigation.navigate("Bookmarks")}
+          >
+            <Ionicons name="bookmarks" size={100} />
+          </Fab>
         </Container>
       </>
     );

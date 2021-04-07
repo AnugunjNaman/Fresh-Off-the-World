@@ -14,6 +14,7 @@ import RedditTrends from "../sources/RedditTrends";
 
 export default class Reddit extends Component {
   state = {
+    topic: "",
     input: {
       topic: "",
     },
@@ -21,7 +22,8 @@ export default class Reddit extends Component {
 
   handleInput = (inputTopic) => {
     this.setState({
-      input: { topic: inputTopic },
+      topic: inputTopic,
+      input: { topic: inputTopic.toLowerCase() },
       FabActive: false,
     });
   };
@@ -44,7 +46,7 @@ export default class Reddit extends Component {
         >
           <TextInput
             style={{ width: "85%", height: "130%", backgroundColor: "#fff" }}
-            value={this.state.input.topic}
+            value={this.state.topic}
             placeholder=" Search Subreddit"
             onChangeText={this.handleInput}
           />
@@ -59,7 +61,6 @@ export default class Reddit extends Component {
             }
           />
         </View>
-
       </>
     );
   }
