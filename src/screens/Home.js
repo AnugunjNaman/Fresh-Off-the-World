@@ -36,7 +36,6 @@ export default class MainScreen extends Component {
   };
 
   render() {
-    console.log("topic", this.state.input.topic);
     return (
       <>
         <View

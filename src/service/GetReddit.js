@@ -1,7 +1,7 @@
 export async function getArticles(subname = "worldnews") {
   try {
     const results = await fetch(
-      `https://www.reddit.com/r/${subname}.json?limit=800&?sort=hot&t=all`
+      `https://www.reddit.com/r/${subname}.json?limit=50&?sort=new&t=all`
     )
       .then((res) => res.json())
       .then((json) => {

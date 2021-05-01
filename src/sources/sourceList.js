@@ -31,9 +31,9 @@ const sources = [
   },
   {
     id: 6,
-    name: "the-new-york-times",
-    title: "The New York Times",
-    image: require("../images/thenewyorktimes.jpg"),
+    name: "the-washington-post",
+    title: "The Washington Post",
+    image: require("../images/thewashingtonpost.jpg"),
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ const sources = [
     id: 11,
     name: "fox-news",
     title: "Fox News",
-    image: require("../images/foxnews.jpg"),
+    image: require("../images/foxnews.png"),
   },
   {
     id: 12,
