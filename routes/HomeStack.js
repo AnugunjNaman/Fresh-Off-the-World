@@ -1,3 +1,5 @@
+// Router to navigate in the App
+
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 
@@ -63,7 +65,7 @@ const HomeStack = createStackNavigator(screens, {
   defaultNavigationOptions: {
     headerTintColor: "#000000",
     headerStyle: { backgroundColor: "#ffffff" },
-    headerTitleStyle: { fontSize: 25}
+    headerTitleStyle: { fontSize: 25 },
   },
 });
 
