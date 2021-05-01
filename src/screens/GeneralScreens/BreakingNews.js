@@ -57,6 +57,7 @@ export default class ListThumbnailExample extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+    // get data from NewsAPI
     if (prevProps.country !== this.props.country) {
       getArticles("general", this.props.country).then((data) => {
         this.setState({
@@ -71,6 +72,7 @@ export default class ListThumbnailExample extends Component {
   }
 
   render() {
+    // render general news
     const randomId = Math.floor(
       ((Math.random() * 113) / 87 + (Math.random() * 299) / 189) * 1000
     );

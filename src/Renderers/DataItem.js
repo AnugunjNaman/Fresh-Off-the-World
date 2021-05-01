@@ -105,6 +105,8 @@ export default class DataItem extends Component {
   };
 
   render() {
+    // rendering data of news sources
+
     let title;
     if (this.props.isSpecific) {
       title = this.data.title;
@@ -146,14 +148,19 @@ export default class DataItem extends Component {
             }}
           >
             <Text note>{this.data.source.name}</Text>
+
+            {/* get time ago when news was published */}
             <TimeAgo time={this.data.publishedAt} />
           </View>
         </Body>
+
+        {/* view news */}
         <Right>
           <Button transparent onPress={this.handlePress} style={{ height: 30 }}>
             <Text>View</Text>
           </Button>
         </Right>
+
         {/* Book Mark Option */}
         {this.state.bookmarkSelected ? (
           <Button

@@ -48,6 +48,7 @@ export default class ModalComponent extends Component {
   };
 
   render() {
+    // handling share and exit upon news view
     const { showModal, articleData } = this.props;
     const { url } = articleData;
 
@@ -65,6 +66,7 @@ export default class ModalComponent extends Component {
             style={{ margin: 15, marginBottom: 0, backgroundColor: "#fff" }}
           >
             <Header style={{ backgroundColor: "#fff" }}>
+              {/* exit */}
               <Left>
                 <Button onPress={this.handleClose} transparent>
                   <Icon name="close" style={{ color: "black", fontSize: 24 }} />
@@ -76,6 +78,8 @@ export default class ModalComponent extends Component {
                   style={{ color: "#000" }}
                 ></Title>
               </Body>
+
+              {/* share */}
               <Right>
                 <Button onPress={this.handleShare} transparent>
                   <Ionicons

@@ -38,6 +38,7 @@ export default class MainScreen extends Component {
   render() {
     return (
       <>
+        {/* Home search */}
         <View
           style={{
             paddingBottom: 15,
@@ -68,6 +69,7 @@ export default class MainScreen extends Component {
           />
         </View>
 
+        {/* Source render */}
         <Container>
           <View style={styles.container}>
             {/* Render Button for General News */}
@@ -104,7 +106,7 @@ export default class MainScreen extends Component {
             </TouchableOpacity>
           </View>
 
-          {/* Render Button for list wise specific news */}
+          {/* Source from source list */}
           <FlatList
             numColumns={2}
             columnWrapperStyle={{ justifyContent: "space-between" }}

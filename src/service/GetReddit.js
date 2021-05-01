@@ -1,3 +1,5 @@
+// get reddit threads using sub reddit API with default set to worldnews
+
 export async function getArticles(subname = "worldnews") {
   try {
     const results = await fetch(

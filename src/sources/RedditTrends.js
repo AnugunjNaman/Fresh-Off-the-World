@@ -58,6 +58,7 @@ export default class SearchTopic extends Component {
   };
 
   componentDidMount() {
+    // using reddit API to get data
     getArticles(this.state.topic).then((data) => {
       if (data) {
         this.setState({
@@ -72,6 +73,8 @@ export default class SearchTopic extends Component {
   }
 
   render() {
+    // getting reddit trendings and rendering them
+
     const randomId = Math.floor(
       ((Math.random() * 113) / 87 + (Math.random() * 299) / 189) * 1000
     );
@@ -129,7 +132,11 @@ export default class SearchTopic extends Component {
             </Title>
           </Body>
         </Header>
+
+        {/* render sub reddit data */}
         <Content>{view}</Content>
+
+        {/* handling share and exit of reddit threads */}
         <Modal
           key={randomId}
           showModal={this.state.setModalVisible}

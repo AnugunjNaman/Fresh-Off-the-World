@@ -31,7 +31,10 @@ export default class Reddit extends Component {
   render() {
     return (
       <>
+        {/* render default sub reddit */}
         <RedditTrends />
+
+        {/* sub reddit search */}
         <View
           style={{
             paddingBottom: 15,

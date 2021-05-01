@@ -76,6 +76,8 @@ export default class DataItem extends Component {
   };
 
   render() {
+    // rendering bookmarks
+
     const title = this.data.title;
     const isValidURL = this.validURL(this.data.urlToImage);
 

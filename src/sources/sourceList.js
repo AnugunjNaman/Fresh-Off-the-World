@@ -1,3 +1,5 @@
+// sources available on home screen
+
 const sources = [
   {
     id: 1,

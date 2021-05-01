@@ -9,6 +9,7 @@ export default class TimeAgo extends Component {
   }
 
   render() {
+    // used to calculate the time ago when news was published
     const time = moment(this.date || moment.now()).fromNow();
     return (
       <Text note style={{ marginHorizontal: 10 }}>

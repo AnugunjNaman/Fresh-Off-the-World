@@ -32,6 +32,7 @@ export default class Bookmarks extends Component {
     };
   }
 
+  // get all bookmarks asynchronously
   getBookmarks = async () => {
     try {
       const result = [];
@@ -108,6 +109,8 @@ export default class Bookmarks extends Component {
       ((Math.random() * 113) / 87 + (Math.random() * 299) / 189) * 1000
     );
 
+    // getting bookmarks stored in data
+
     let view = this.state.isLoading ? (
       <View>
         <ActivityIndicator animating={this.state.isLoading} />
@@ -168,7 +171,11 @@ export default class Bookmarks extends Component {
             </Button>
           </Right>
         </Header>
+
+        {/* render bookmarks */}
         <Content>{view}</Content>
+
+        {/* handle share and exit upon bookmark news view */}
         <Modal
           key={randomId}
           showModal={this.state.setModalVisible}

@@ -57,6 +57,9 @@ export default class ListThumbnailExample extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+    // get news data from NewsAPI with category of business
+
+    // on change of country update the data
     if (prevProps.country !== this.props.country) {
       getArticles("business", this.props.country).then((data) => {
         this.setState({

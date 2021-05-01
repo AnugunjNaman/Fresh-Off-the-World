@@ -1,3 +1,5 @@
+// get news from specific source using NewsAPI
+
 import { articleURL, language, API_KEY } from "../config/APIConfigFull";
 
 export async function getArticles(sources = "bbc-news") {

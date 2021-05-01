@@ -1,3 +1,5 @@
+// get news country wise from NewsAPI
+
 import { articleURL, API_KEY } from "../config/APIConfig";
 
 export async function getArticles(category = "general", countryCode = "in") {

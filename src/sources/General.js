@@ -45,6 +45,7 @@ export default class General extends Component {
   };
 
   render() {
+    // category tabs for news from different sources
     return (
       <>
         <Container>
@@ -54,6 +55,8 @@ export default class General extends Component {
               <Title style={{ color: "black" }}>Trending News</Title>
             </Body>
             <Left />
+
+            {/* using picker to select country */}
             <Right>
               <Container style={{ height: "20%" }}>
                 <Picker onPick={this.handleCountryPicker} />

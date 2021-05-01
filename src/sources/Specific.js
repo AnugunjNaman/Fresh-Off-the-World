@@ -56,6 +56,7 @@ export default class Specific extends Component {
   };
 
   componentDidMount() {
+    // API call to get data from specific source
     getArticles(this.state.source).then((data) => {
       this.setState({
         isLoading: false,
@@ -68,6 +69,8 @@ export default class Specific extends Component {
   }
 
   render() {
+    // rendering news of a specific source
+
     const sourceName = this.getName(this.state.source);
 
     const randomId = Math.floor(
@@ -114,7 +117,10 @@ export default class Specific extends Component {
             </Title>
           </Body>
         </Header>
+        {/* rendering news from specific source */}
         <Content>{view}</Content>
+
+        {/* handling share and exit */}
         <Modal
           key={randomId}
           showModal={this.state.setModalVisible}

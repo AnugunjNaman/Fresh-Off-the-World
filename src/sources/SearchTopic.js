@@ -47,6 +47,7 @@ export default class SearchTopic extends Component {
   };
 
   componentDidMount() {
+    // storing news in data when loaded
     getArticles(this.state.topic).then((data) => {
       this.setState({
         isLoading: false,
@@ -62,6 +63,8 @@ export default class SearchTopic extends Component {
     const randomId = Math.floor(
       ((Math.random() * 113) / 87 + (Math.random() * 299) / 189) * 1000
     );
+
+    // rendering data
     let view = this.state.isLoading ? (
       <View>
         <ActivityIndicator animating={this.state.isLoading} />
@@ -117,7 +120,11 @@ export default class SearchTopic extends Component {
             </Title>
           </Body>
         </Header>
+
+        {/* handling data rendering */}
         <Content>{view}</Content>
+
+        {/* handling share and close on news view */}
         <Modal
           key={randomId}
           showModal={this.state.setModalVisible}
