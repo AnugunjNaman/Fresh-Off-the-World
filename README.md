@@ -14,6 +14,9 @@ This application aims to provide a simple interface for the latest news and soci
 
 #### Few Screenshots:
 
+![A](relative/path/to/img.jpg?raw=true)  ![B](relative/path/to/img.jpg?raw=true)  ![C](relative/path/to/img.jpg?raw=true)
+
+![D](relative/path/to/img.jpg?raw=true)  ![E](relative/path/to/img.jpg?raw=true)  ![F](relative/path/to/img.jpg?raw=true)
 
 ##### Note: The code is commented as well as possible for other to navigate and update and extend features.
 
