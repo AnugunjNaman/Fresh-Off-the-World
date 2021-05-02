@@ -14,10 +14,9 @@ This application aims to provide a simple interface for the latest news and soci
 
 #### Few Screenshots:
 
-![A](relative/path/to/img.jpg?raw=true)  ![B](relative/path/to/img.jpg?raw=true)  ![C](relative/path/to/img.jpg?raw=true)
+<img src="Images/A.jpeg" alt="drawing" width="200"/>  <img src="Images/B.jpeg" alt="drawing" width="200"/> <img src="Images/C.jpeg" alt="drawing" width="200"/>
 
-![D](relative/path/to/img.jpg?raw=true)  ![E](relative/path/to/img.jpg?raw=true)  ![F](relative/path/to/img.jpg?raw=true)
-
+<img src="Images/E.jpeg" alt="drawing" width="200"/> <img src="Images/D.jpeg" alt="drawing" width="200"/> <img src="Images/F.jpeg" alt="drawing" width="200"/>
 ##### Note: The code is commented as well as possible for other to navigate and update and extend features.
 
 #### Timeline:
