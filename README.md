@@ -19,7 +19,7 @@ This application aims to provide a simple interface for the latest news and soci
 
 #### Timeline:
 
-20/04/21: Black Box Testing Completed. We manually tested 100 combination for both News API and 100 for Subreddits. Some of them were existing and sensible searches while others where random.
+<u>20/04/21</u>: Black Box Testing Completed. We manually tested 100 combination for both News API and 100 for Subreddits. Some of them were existing and sensible searches while others where random.
 
 19/04/21: Snapshot Testing Completed.
 
