@@ -5,10 +5,10 @@
 This application aims to provide a simple interface for the latest news and social media trends around the world in a single place. The scope of this application is broad, ranging from millennials to baby boomers. Each generation likes specific kinds of news and the latest trends, and over time, they all find their sources. We here provide all those sources combined without the need to venture out to multiple sources.
 
 #### How to run:
-  1. Clone the repository (command: `git clone REPO_URL`).
-  2. Navigate to the cloned directory (command: `cd Fresh-Off-the-World`).
-  3. Initialize npm (command: `npm install`).
-  4. start the app (command: `npm start`).
+  1. Clone the repository: `git clone REPO_URL`.
+  2. Navigate to the cloned directory: `cd Fresh-Off-the-World`.
+  3. Initialize npm: `npm install`.
+  4. start the app: `npm start`.
   5. you can run the app in three ways:  
         a. Android studio  
         b. Expo app: scan the QR code displayed with expo app in your smart phone.  
