@@ -1,5 +1,6 @@
 ## CS330 Software Engineering Project
 
+Developed By: Chetan Sinha + Anugunj Naman
 ### Application: Fresh Off the World
 
 This application aims to provide a simple interface for the latest news and social media trends around the world in a single place. The scope of this application is broad, ranging from millennials to baby boomers. Each generation likes specific kinds of news and the latest trends, and over time, they all find their sources. We here provide all those sources combined without the need to venture out to multiple sources.
